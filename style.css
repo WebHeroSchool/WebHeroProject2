@@ -12,15 +12,13 @@
 .logo{
   display:flex;
 }
-.section{
+.first-section{
 display:flex;
 width:80%;
 margin:auto;
 border: 1px red dashed;
 }
-*{
-  border: 1px dashed red;
-}
+
 .body{
   margin: 0px;
 }
