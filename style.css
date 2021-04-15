@@ -1,3 +1,26 @@
 .main-section__title{
   font-family: 'PT Serif',sans-serif;
 }
+.header {
+  width:80%;
+  margin: auto;
+  border: dashed 1px red;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  display:flex;
+}
+.section{
+display:flex;
+width:80%;
+margin:auto;
+border: 1px red dashed;
+}
+*{
+  border: 1px dashed red;
+}
+.body{
+  margin: 0px;
+}
