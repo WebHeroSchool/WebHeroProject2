@@ -23,7 +23,7 @@ border: 1px red dashed;
   margin: 0px;
 }
 .menu{
+  width:23%;
   display: flex;
   justify-content: space-between;
-  width:23%;
 }
