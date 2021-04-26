@@ -22,3 +22,8 @@ border: 1px red dashed;
 .body{
   margin: 0px;
 }
+.menu{
+  display: flex;
+  justify-content: space-between;
+  width:23%;
+}
