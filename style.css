@@ -1,5 +1,5 @@
-.main-section__title{
-  font-family: 'PT Serif',sans-serif;
+.body{
+  margin: 0px;
 }
 .header {
   width:80%;
@@ -9,9 +9,17 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .logo{
   display:flex;
 }
+
+.menu{
+  width:23%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .first-section{
 display:flex;
 width:80%;
@@ -19,11 +27,6 @@ margin:auto;
 border: 1px red dashed;
 }
 
-.body{
-  margin: 0px;
-}
-.menu{
-  width:23%;
-  display: flex;
-  justify-content: space-between;
+.main-section__title{
+  font-family: 'PT Serif',sans-serif;
 }
