@@ -25,6 +25,7 @@ display:flex;
 width:80%;
 margin:auto;
 border: 1px red dashed;
+align-items: center;
 }
 
 .main-section__title{
