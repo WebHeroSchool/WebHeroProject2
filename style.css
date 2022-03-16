@@ -1,9 +1,19 @@
+/* *{
+  border: dashed 1px red;
+} */
+* {
+  border:dashed 1px red;
+}
 .body{
   margin: 0px;
 }
-.header {
+.wrapper{
   width:80%;
   margin: auto;
+  border: dashed 1px red;
+}
+.header {
+  padding: 40px 0;
   border: dashed 1px red;
   display:flex;
   align-items: center;
@@ -12,6 +22,9 @@
 
 .logo{
   display:flex;
+  width: 190px;
+  height: 35px;
+  background: url('Photos/logo.svg');
 }
 
 .menu{
@@ -21,13 +34,26 @@
 }
 
 .first-section{
-display:flex;
-width:80%;
-margin:auto;
-border: 1px red dashed;
-align-items: center;
+  display:flex;
+  width: 45%;
+
+  margin: 120px 0 0 0;
+  border: dashed 1px red;
 }
 
-.main-section__title{
-  font-family: 'PT Serif',sans-serif;
+.main-content__title{
+  font-family: 'PTSerif-Bold', sans-serif, arial;
+  font-size: 50px;
+  align-items: flex-start;
+  margin: 0 0;
+
+}
+.main-content__subtitle{
+  font: normal 18px 'Roboto', sans-serif;
+  margin: 40px 0;
+  width:90%;
+}
+
+.main-content__button{
+  margin: 0 0;
 }
