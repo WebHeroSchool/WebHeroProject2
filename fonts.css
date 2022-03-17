@@ -1,1 +1,27 @@
+@font-face {
+  font-family: 'PTSerif-Bold';
+  src:url('Fonts/PTSerif-Bold.ttf') format('ttf');
+  font-weight:normal;
+  font-style:normal;
+}
 
+@font-face {
+  font-family: 'PTSerif-Bolditalic';
+  src:url('Fonts/PTSerif-Bolditalic.ttf') format('ttf');
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+  font-family: 'PTSerif-Italic';
+  src:url('Fonts/PTSerif-Italic.ttf') format('ttf');
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+  font-family: 'PTSerif-Regular';
+  src:url('Fonts/PTSerif-Regular.ttf') format('ttf');
+  font-weight:normal;
+  font-style:normal;
+}
