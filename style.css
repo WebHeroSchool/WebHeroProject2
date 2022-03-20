@@ -1,6 +1,4 @@
-/* *{
-  border: dashed 1px red;
-} */
+
 * {
   border:dashed 1px red;
 }
@@ -25,6 +23,7 @@
   width: 190px;
   height: 35px;
   background: url('Photos/logo.svg');
+  font-family: 'PtSerif-Regular', sans-serif, arial.
 }
 
 .menu{
