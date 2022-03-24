@@ -1,18 +1,14 @@
 
-* {
-  border:dashed 1px red;
-}
+
 .body{
   margin: 0px;
 }
 .wrapper{
   width:80%;
   margin: auto;
-  border: dashed 1px red;
 }
 .header {
   padding: 40px 0;
-  border: dashed 1px red;
   display:flex;
   align-items: center;
   justify-content: space-between;
@@ -23,7 +19,6 @@
   width: 190px;
   height: 35px;
   background: url('img/logo.svg');
-  font-family: 'pt_serif_regular', arial, helvetica, sans-serif;
 }
 
 .menu{
@@ -32,11 +27,19 @@
   justify-content: space-between;
 }
 
+.menu__item{
+  position: relative;
+  font: 500 18px/21px 'roboto', arial, helvetica, sans-serif;
+  text-decoration:none;
+  margin-right: 26px;
+  color: #000;
+}
+
+
 .first-section{
   display:flex;
   width: 45%;
   margin: 120px 0 0 0;
-  border: dashed 1px red;
 }
 
 .main-content__title{
