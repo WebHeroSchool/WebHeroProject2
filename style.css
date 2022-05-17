@@ -83,7 +83,7 @@
 .main{
   display:inline;
   width:35%;
-  padding-top: 68px;
+  padding-top: 70px;
 
 }
 .main__title{
@@ -101,13 +101,13 @@
 .main__subtitle{
   font: normal 22px 'roboto', arial, helvetica, sans-serif;
   width: 455px;
-  margin: 32px 0 0 0;
+  margin: 35px 0 0 0;
   line-height: 26px;
 
 }
 
 .main__button{
-  margin: 40px 0 0;
+  margin: 42px 0 0;
   width: 270px;
   height:57px;
   padding: 14px 16px;
