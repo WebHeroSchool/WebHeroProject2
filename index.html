@@ -3,9 +3,9 @@
 
 <head>
      <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
      <title>Верстка с тильды</title>
      <link rel="stylesheet" href="./style.css">
-     <!--<link rel="font" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">-->
      <link rel="stylesheet" href="./fonts.css">
      <link rel="font" href="https://fonts.googleapis.com/css2?family=roboto:ital,wght@0,500;1,100&display=swap">
 </head>
@@ -13,8 +13,6 @@
   <body class="body">
     <header class="header">
         <div class="logo">
-            <!--<img class="logo__img">
-            <p class="logo__name">app.creation</p>-->
         </div>
         <nav class="menu">
             <a class="menu__item menu__item_hover">start</a>
@@ -23,12 +21,28 @@
             <a class="menu__item menu__item_hover">blog</a>
             <a class="menu__item menu__item_hover">contact us</a>
         </nav>
+        <div class="hamburger-menu">
+       <input id="menu__toggle" type="checkbox"/>
+       <label class="menu__btn" for="menu__toggle">
+       <span></span>
+       </label>
+
+    <ul class="menu__box">
+     <li><a class="menu__item" href="#">Главная</a></li>
+    <li><a class="menu__item" href="#">Проекты</a></li>
+    <li><a class="menu__item" href="#">Команда</a></li>
+    <li><a class="menu__item" href="#">Блог</a></li>
+    <li><a class="menu__item" href="#">Контакты</a></li>
+    </ul>
+
+    </div>
     </header>
     <section class="first-section">
       <section class="main">
-            <h1 class="main__title">Building an App <span class="main__title-background">Without Design Experience?</span></h1>
+            <h1 class="main__title">Building an App <span class="main__title-background">Without Design Expertise</span>?</h1>
             <p class="main__subtitle">I help tech startups design better digital products without hiring a full-time designer</p>
             <button class="main__button">Schedule free consultation</button>
+
 
       </section>
       <div class="image">

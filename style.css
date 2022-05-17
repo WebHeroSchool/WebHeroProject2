@@ -3,6 +3,8 @@
 .body{
   margin: 0px;
 }
+
+
 .wrapper{
   width:80%;
   margin: auto;
@@ -12,7 +14,7 @@
   display:flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 0 137px 0;
+  margin: 0 0 130px 0;
 }
 
 .logo{
@@ -24,16 +26,16 @@
 
 .menu{
   align-items:stretch;
-  width:33%;
   display: flex;
+  width:24%;
   justify-content: space-between;
 }
 
 .menu__item{
   position: relative;
-  font: 500 18px/21px 'roboto', arial, helvetica, sans-serif;
+  font: 500 18px/21.09px 'roboto', arial, helvetica, sans-serif;
   text-decoration:none;
-  margin-right: 26px;
+  margin-right: 27px;
   color: #000;
   opacity:1;
   transition: opacity 0.5s, color 0.5s, width 0.5s;
@@ -80,33 +82,43 @@
 
 .main{
   display:inline;
-  width:35%
+  width:35%;
+  padding-top: 68px;
 
 }
 .main__title{
   font-family:'pt_serif_bold', arial, helvetica, sans-serif;
-  font-size: 50px;
+  font-size: 66px;
   align-items: flex-start;
   margin: 0 0;
 
 }
+
+.main__title-background{
+  background-image: linear-gradient(white 7% ,#ECF3FF 7%, #ECF3FF 93%, white 93% ) ;
+}
+
 .main__subtitle{
-  font: normal 18px 'roboto', arial, helvetica, sans-serif;
-  margin: 40px 0 0 0;
+  font: normal 22px 'roboto', arial, helvetica, sans-serif;
+  width: 455px;
+  margin: 32px 0 0 0;
+  line-height: 26px;
 
 }
 
 .main__button{
   margin: 40px 0 0;
-  width: 48%;
+  width: 270px;
+  height:57px;
   padding: 14px 16px;
   text-decoration: none;
   border-radius: 4px;
   border: none;
-  font: normal 14px 'roboto', arial, helvetica, sans-serif;
+  font: normal 18px 'roboto', arial, helvetica, sans-serif;
   color: #fff;
   background-color: #0056EC;
   transition: margin 0.3s, box-shadow 0.5s;
+  line-height: 21.09px;
 
 }
 
@@ -118,13 +130,162 @@
 
 
  .image{
-   width:65%;
-   height:439px;
+   width:770px;
+   height:657px;
    background: url('img/mainImg.svg');
    background-position: center;
    background-repeat: no-repeat;
+   background-size: contain;
  }
 
- .main__title-background{
-   background-color: #ECF3FF;
+
+
+ @media only screen and (max-width:1366px){
+  .menu{
+    width:10%;
+  }
+ }
+
+ @media only screen and (min-width:768px){
+   .hamburger-menu{
+     display: none;
+   }
+ }
+ @media only screen and (max-width:768px)
+ {
+   .menu {
+     display:none;
+   }
+   .first-section{
+     display:flex;
+     flex-direction: column-reverse;
+     align-items: center;
+   }
+
+   .main{
+     display:block;
+     width:50%;
+     justify-content: center;
+     margin: auto;
+     text-align: center;
+   }
+
+   .main__title{
+    align-self: center;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+
+   }
+
+   .image{
+     display: block;
+     width:100%;
+   }
+
+   .main__button{
+     width: 100%;
+   }
+   #menu__toggle{
+
+     opacity:0;
+
+   }
+
+   .menu__btn{
+
+     display:flex;
+     align-items:center;
+     position:fixed;
+     top: 20px;
+     right:10%;
+
+     width:26px;
+     height:26px;
+
+     cursor:pointer;
+     z-index:3;
+
+   }
+
+   .menu__btn > span,
+
+   .menu__btn > span::before,
+
+   .menu__btn > span::after {
+     display: block;
+     position: absolute;
+     width: 100%;
+     height: 2px;
+     background-color: #616161;
+   }
+   .menu__btn > span::before {
+     content: '';
+     top: -8px;
+   }
+   .menu__btn > span::after {
+     content: '';
+     top: 8px;
+   }
+
+   .menu__box{
+     display: block;
+     position: fixed;
+     visibility: hidden;
+     top: 0;
+     left: -100%;
+     width: 100%--;
+     height: 100%;
+     margin: 0;
+     padding: 80px 0;
+     list-style: none;
+     text-align: center;
+     background-color: #ECEFF1;
+     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+   }
+
+   .menu__item {
+     display: block;
+     padding: 12px 24px;
+     color: #333;
+     font-family: 'Roboto', sans-serif;
+     font-size: 20px;
+     font-weight: 600;
+     text-decoration: none;
+   }
+   .menu__item:hover {
+     background-color: #CFD8DC;
+   }
+
+   #menu__toggle:checked ~ .menu__btn > span {
+     transform: rotate(45deg);
+   }
+   #menu__toggle:checked ~ .menu__btn > span::before {
+     top: 0;
+     transform: rotate(90deg);
+   }
+   #menu__toggle:checked ~ .menu__btn > span::after {
+     top: 0;
+     transform: rotate(0);
+   }
+   #menu__toggle:checked ~ .menu__box {
+     visibility: visible;
+     left: 0;
+   }
+
+   .menu__btn > span,
+
+   .menu__btn > span::before,
+
+   .menu__btn > span::after {
+     transition-duration: .25s;
+   }
+
+   .menu__box {
+     transition-duration: .25s;
+   }
+   .menu__item {
+     transition-duration: .25s;
+   }
+
  }
