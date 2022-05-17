@@ -142,7 +142,7 @@
 
 
 
- @media only screen and (max-width:1367px){
+ @media only screen and (max-width:1919px){
   .wrapper{
   width:68%;
   margin:auto;
@@ -198,13 +198,13 @@
  }
 
 
-@media only screen and (max-width:1025px){
+@media only screen and (max-width:1365px){
   .wrapper{
     width:91%;
     margin:auto
   }
 }
- @media only screen and (min-width:376px){
+ @media only screen and (min-width:1023px){
    .hamburger-menu{
      display: none;
    }
@@ -213,7 +213,7 @@
   }
 
  }
- @media only screen and (max-width:376px)
+ @media only screen and (max-width:1023px)
  {
 
    .logo__full{
@@ -351,7 +351,7 @@
      padding: 196px 0 0 0;
      list-style: none;
      text-align: center;
-     background-color: #ECEFF1;
+     background-color: #FFF;
      box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
    }
 
