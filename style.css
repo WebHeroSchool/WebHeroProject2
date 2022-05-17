@@ -355,21 +355,26 @@
      box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
    }
 
-   .menu__item {
+   .menu__item_burger {
      height:36px;
      display: block;
-     padding: 0 0 24px 0;
-     color: #333;
+     margin: 0 auto 24px auto;
+     color: #000;
      font-family: 'Roboto', sans-serif;
      font-size: 30px;
      font-weight: 500;
      text-decoration: none;
+     transition: .5s all;
    }
 
 
-   .menu__item:hover {
-     background-color: #CFD8DC;
+   .menu__item_burger:hover{
+     color: #0056EC;
+     opacity: 1;
+
    }
+
+
 
    #menu__toggle:checked ~ .menu__btn > span {
      transform: rotate(45deg);
@@ -398,7 +403,7 @@
    .menu__box {
      transition-duration: .25s;
    }
-   .menu__item {
+   .menu__item_burger {
      transition-duration: .25s;
    }
 
