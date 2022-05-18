@@ -140,6 +140,31 @@
    background-size: contain;
  }
 
+ .plane{
+   position: relative;
+   background-image: url('img/plane.svg');
+   width:45.12px;
+   height:23.24px;
+   top:62px;
+   left:307px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   animation: plane 3s ease-out infinite;
+ }
+
+@keyframes plane {
+  from {
+    transform: translateX(0) translateY(0) ;
+    opacity:1;
+
+  }
+
+  to {
+    transform: translateX(300px) translateY(-200px);
+    opacity: 0;
+
+  }
+}
 
 
  @media only screen and (max-width:1919px){
@@ -193,6 +218,28 @@
     height:439px;
   }
 
+  .plane{
+    width:30.12px;
+    height:15.53px;
+    top:41px;
+    left:205px;
+    animation: plane 3s ease-out infinite;
+  }
+
+  @keyframes plane {
+    from {
+      transform: translateX(0) translateY(0) ;
+      opacity:1;
+
+    }
+
+    to {
+      transform: translateX(250px) translateY(-100px);
+      opacity: 0;
+
+    }
+  }
+
 
 
  }
@@ -203,7 +250,11 @@
     width:91%;
     margin:auto
   }
-}
+
+
+
+  }
+
  @media only screen and (min-width:1023px){
    .hamburger-menu{
      display: none;
@@ -280,6 +331,28 @@
      display: block;
      width:280px;
      height:239px;
+   }
+
+   .plane{
+     width:16.41px;
+     height:8.45px;
+     left:111px;
+     top:22.58px;
+     animation-duration: 2s;
+   }
+
+   @keyframes plane {
+     from {
+       transform: translateX(0) translateY(0) ;
+       opacity:1;
+
+     }
+
+     to {
+       transform: translateX(100px) translateY(-40px);
+       opacity: 0;
+
+     }
    }
 
    .main__button{
