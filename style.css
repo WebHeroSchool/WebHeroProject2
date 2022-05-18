@@ -233,8 +233,10 @@
      display:flex;
      background-image: url('img/logo_circles.svg');
      width:36px;
-     height:36px;
+     height:35px;
+     background-repeat: no-repeat;
    }
+
    .menu {
      display:none;
    }
