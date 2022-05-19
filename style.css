@@ -339,6 +339,7 @@
      left:111px;
      top:22.58px;
      animation-duration: 2s;
+     z-index: 1;
    }
 
    @keyframes plane {
@@ -423,11 +424,12 @@
      width: 100%;
      height: 100%;
      margin: 0;
-     padding: 196px 0 0 0;
+     padding: 188px 0 0 0;
      list-style: none;
      text-align: center;
      background-color: #FFF;
      box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+     z-index: 2;
    }
 
    .menu__item_burger {
@@ -438,6 +440,8 @@
      font-family: 'Roboto', sans-serif;
      font-size: 30px;
      font-weight: 500;
+     text-align: center;
+     line-height: 35.16px;
      text-decoration: none;
      transition: .5s all;
    }
