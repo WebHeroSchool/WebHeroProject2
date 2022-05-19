@@ -8,6 +8,7 @@
 .wrapper{
   width:80%;
   margin: auto;
+  max-width:1528px;
 }
 .header {
   padding: 40px 0;
@@ -27,7 +28,6 @@
 .menu{
   align-items:stretch;
   display: flex;
-  width:24%;
   justify-content: space-between;
 }
 
@@ -35,15 +35,22 @@
   position: relative;
   font: 500 18px/21.09px 'roboto', arial, helvetica, sans-serif;
   text-decoration:none;
-  margin-right: 27px;
+  margin-right: 29px;
   color: #000;
   opacity:1;
   transition: opacity 0.5s, color 0.5s, width 0.5s;
   cursor:pointer;
 }
 
+.start{
+margin-right: 28px;
+}
+
+.services{
+  margin-right: 25px;
+}
 .menu__item:last-child{
-  margin-right: 0px;
+  margin-right: 7px;
 }
 
 .menu__item:hover{
@@ -75,35 +82,38 @@
 }
 
 .first-section{
+  width:100%;
+  height:657px;
   display:flex;
   justify-content: space-between;
-  padding:0 0 200px 0;
+
 }
 
 .main{
   display:inline;
   width:35%;
-  padding-top: 73px;
+  height:100%;
+  padding-top: 70.5px;
 
 }
 .main__title{
   font-family:'pt_serif_bold', arial, helvetica, sans-serif;
   font-size: 66px;
   font-weight: 700;
-  align-items: flex-start;
+  align-items: flex-end;
   margin: 0 0;
-  line-height: 85.4px;
+  line-height: 87.5px;
 
 }
 
 .main__title-background{
-  background-image: linear-gradient(white 7% ,#ECF3FF 7%, #ECF3FF 93%, white 93% ) ;
+  background-image: linear-gradient(white 13% ,#ECF3FF 12%, #ECF3FF 93%, white 93% ) ;
 }
 
 .main__subtitle{
   font: normal 22px 'roboto', arial, helvetica, sans-serif;
   width: 455px;
-  margin: 40px 0 0 0;
+  margin: 34px 0 0 0;
   line-height: 25.78px;
 
 }
@@ -132,8 +142,8 @@
 
 
  .image{
-   width:770px;
-   height:657px;
+   width:50%;
+
    background: url('img/mainImg.svg');
    background-position: center;
    background-repeat: no-repeat;
@@ -143,10 +153,10 @@
  .plane{
    position: relative;
    background-image: url('img/plane.svg');
-   width:45.12px;
-   height:23.24px;
-   top:62px;
-   left:307px;
+   width:5.8%;
+   height:3.5%;
+   top:9.5%;
+   left:40%;
    background-size: contain;
    background-repeat: no-repeat;
    animation: plane 3s ease-out infinite;
@@ -216,14 +226,6 @@
   .image{
     width:514px;
     height:439px;
-  }
-
-  .plane{
-    width:30.12px;
-    height:15.53px;
-    top:41px;
-    left:205px;
-    animation: plane 3s ease-out infinite;
   }
 
   @keyframes plane {
