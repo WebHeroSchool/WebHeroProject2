@@ -94,6 +94,7 @@ margin-right: 28px;
   width:35%;
   height:100%;
   padding-top: 70.5px;
+  align-items: center;
 
 }
 .main__title{
@@ -142,8 +143,7 @@ margin-right: 28px;
 
 
  .image{
-   width:50%;
-
+   width:50.5%;
    background: url('img/mainImg.svg');
    background-position: center;
    background-repeat: no-repeat;
@@ -161,6 +161,15 @@ margin-right: 28px;
    background-repeat: no-repeat;
    animation: plane 3s ease-out infinite;
  }
+
+.bottom_circles{
+  background-image: url('img/bottom_circles.svg');
+  width:32px;
+  height: 8px;
+  margin: 130px auto auto auto;
+  position:  relative;
+}
+
 
 @keyframes plane {
   from {
@@ -183,9 +192,9 @@ margin-right: 28px;
   margin:auto;
   }
 
-  .menu{
-    width:34%;
-  }
+.menu{
+  padding-top: 4px;
+}
 
   .menu__item{
     font-weight: 500;
@@ -194,8 +203,18 @@ margin-right: 28px;
 
   }
 
+  .menu__item:last-child{
+    margin-right: 4px;
+  }
+
+  .first-section{
+    width: 100%;
+    height: 439px;
+    justify-content: center;
+  }
+
   .main{
-    width:47%;
+    width:418px;
     padding-top: 16px;
   }
 
@@ -207,13 +226,14 @@ margin-right: 28px;
     font-weight: 700;
     font-size: 50px;
     line-height: 65px;
-    width:434px;
+
   }
   .main__subtitle{
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
     width:367px;
+    margin-top: 10%;
   }
 
   .main__button{
@@ -222,10 +242,17 @@ margin-right: 28px;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    margin-top: 41px;
   }
   .image{
     width:514px;
     height:439px;
+    background-size: contain;
+
+  }
+
+  .bottom_circles{
+    margin-top:88px;
   }
 
   @keyframes plane {
@@ -253,11 +280,26 @@ margin-right: 28px;
     margin:auto
   }
 
+  .first-section{
+    height:439px;
+    justify-content: center;
+  }
+
+  .menu__item:last-child{
+    margin-right: 0;
+  }
+
+
+
+  .main__subtitle{
+    margin-top: 10%;
+  }
+
 
 
   }
 
- @media only screen and (min-width:1023px){
+ @media only screen and (min-width:768px){
    .hamburger-menu{
      display: none;
    }
@@ -266,7 +308,7 @@ margin-right: 28px;
   }
 
  }
- @media only screen and (max-width:1023px)
+ @media only screen and (max-width:769px)
  {
 
    .logo__full{
@@ -297,7 +339,8 @@ margin-right: 28px;
      display:flex;
      flex-direction: column-reverse;
      align-items: center;
-     padding: 0 0 ;
+     padding: 0 0;
+
    }
 
    .main{
@@ -307,7 +350,7 @@ margin-right: 28px;
      margin: auto;
      text-align: center;
      padding: 0 0;
-     margin-top: 22px;
+     margin-top: ;
    }
 
    .main__title{
@@ -318,6 +361,7 @@ margin-right: 28px;
     width:267px;
     height:96px;
     margin:auto;
+    margin-top: 20px;
    }
 
    .main__subtitle{
@@ -331,15 +375,12 @@ margin-right: 28px;
    }
    .image{
      display: block;
-     width:280px;
-     height:239px;
+     width:85%;
+     height:58%;
    }
 
    .plane{
-     width:16.41px;
-     height:8.45px;
-     left:111px;
-     top:22.58px;
+
      animation-duration: 2s;
      z-index: 1;
    }
