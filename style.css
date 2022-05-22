@@ -280,11 +280,9 @@ margin-right: 28px;
     margin-top: 10%;
   }
 
-
-
   }
 
- @media only screen and (min-width:768px){
+@media only screen and (min-width:769px){
    .hamburger-menu{
      display: none;
    }
@@ -293,7 +291,9 @@ margin-right: 28px;
   }
 
  }
- @media only screen and (max-width:769px)
+
+
+@media only screen and (max-width:769px)
  {
 
    .logo__full{
@@ -323,6 +323,7 @@ margin-right: 28px;
 
    .first-section{
      display:flex;
+     height:900px;
      flex-direction: column-reverse;
      align-items: center;
      padding: 0 0;
@@ -331,38 +332,48 @@ margin-right: 28px;
    .main{
      display:block;
      width:100%;
+     height:500px;
      justify-content: center;
      margin: auto;
      text-align: center;
      padding: 0 0;
-     margin-top: ;
+     margin-top: 5%;
    }
 
    .main__title{
     align-self: center;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
-    line-height: 39px;
-    width:267px;
-    height:96px;
+    line-height: 55px;
+    width:70%;
+    height:30%;
     margin:auto;
-    margin-top: 20px;
+    margin-bottom: 0;
+
+
+
    }
 
    .main__subtitle{
-     width:245px ;
+     width:50% ;
      height: 57px ;
      font-weight: 500;
      font-size: 16px;
      line-height: 19px;
      margin:auto;
-     margin-top: 52px;
+     margin-top: 10%;
+   }
+
+   .main__button{
+
    }
    .image{
      display: block;
-     width:85%;
-     height:58%;
+     width:80%;
+
    }
+
+
 
    .plane{
      animation-duration: 2s;
@@ -502,4 +513,49 @@ margin-right: 28px;
      transition-duration: .25s;
    }
 
+   .bottom_circles{
+     display:none;
+   }
+
+ }
+ @media only screen and (max-width:550px){
+   .first-section{
+     height:537px;
+
+   }
+
+   .main{
+     width:100%;
+     height:266px;
+     margin-top: 22px;
+   }
+
+   .main__title{
+    font-size: 30px;
+    line-height: 39px;
+    width:267px;
+    height:96px;
+    margin:auto;
+
+
+   }
+
+   .main__subtitle{
+     width:245px ;
+     height: 57px ;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 19px;
+     margin:auto;
+     margin-top: 54px;
+   }
+
+   .main__button{
+
+   }
+   .image{
+     display: block;
+     width:280px;
+     height:239px;
+   }
  }
