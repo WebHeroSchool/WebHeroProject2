@@ -176,7 +176,12 @@ margin-right: 28px;
     opacity: 0;
   }
 }
+@media only screen and (min-width:1921px){
+  .wrapper{
+    margin:auto;
+  }
 
+  }
 
  @media only screen and (max-width:1500px){
   .wrapper{
